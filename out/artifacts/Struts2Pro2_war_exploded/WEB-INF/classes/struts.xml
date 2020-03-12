@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="struts" extends="struts-default">
+        <global-results>
+            <result name="login">/login.jsp</result>
+            <result name="input">/index.jsp</result>
+        </global-results>
+        <action name="hello" class="Hello" method="hello">
+            <result name="success">/hello.jsp</result>
+        </action>
+        <action name="myform2" class="com.itlike.myform.MyFormAction2">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="demo" class="com.itlike.myform.Demo">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="myform3" class="com.itlike.myform.MyFormAction3">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="myform4" class="com.itlike.myform.com.itlike.dome.MyFormAction4">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="myform5" class="com.itlike.myform.com.itlike.dome.MyFormAction5">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="myform6" class="com.itlike.myform.com.itlike.dome.MyFormAction6">
+            <result name="success">/res.jsp</result>
+        </action>
+        <action name="myform7" class="com.itlike.myform.com.itlike.dome.MyFormAction7">
+            <result name="success">/res.jsp</result>
+        </action>
+    </package>
+</struts>
